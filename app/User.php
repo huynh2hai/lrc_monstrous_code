@@ -33,4 +33,9 @@ class User extends Authenticatable
 
         return $user;
     }
+
+    public function stats()
+    {
+        return new Statistics($this);
+    }
 }
