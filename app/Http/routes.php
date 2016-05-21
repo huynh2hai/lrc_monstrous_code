@@ -23,3 +23,5 @@ Route::post('posts', function(PublishPostForm $form){
 
     return 'Success!';
 });
+
+Route::get('users', 'UsersController@store');
