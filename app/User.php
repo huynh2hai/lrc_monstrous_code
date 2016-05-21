@@ -7,6 +7,8 @@ use App\Events\UserRegistered;
 
 class User extends Authenticatable
 {
+    use PerticipatesInForum;
+
     /**
      * The attributes that are mass assignable.
      *
